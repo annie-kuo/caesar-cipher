@@ -1,2 +1,2 @@
 # caesar-cipher
-Program that encrypts and decodes messages using the Caesar encryption algorithm.
+This is a program that encrypts and decodes messages using the Caesar encryption algorithm.
