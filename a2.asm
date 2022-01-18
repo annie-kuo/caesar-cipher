@@ -234,16 +234,6 @@ TUCExit:
 	jr $ra
 
 
-
-
-
-#####################################################################
-#                     END OF PROVIDED CODE... 
-#####################################################################
-
-
-
-
 #####################################################################
 # EncryptMessage
 # $a0: the memory address of the message
@@ -253,9 +243,7 @@ TUCExit:
 
 
 
-EncryptMessage:	
-	
-# TODO: Put your implemententation for EncryptMessage here.	
+EncryptMessage:		
 	# $a0: the memory address of the message
 	# $a1: the key (size of the offset chosen by the user) 
 	# $s0: number of char encrypted
@@ -315,12 +303,7 @@ Finish:
 	bne $s0 $s1 Encryption
 	
 	
-	
-	
-#===================================================================#
-#            DO NOT TOUCH THIS LINE
-#===================================================================#
-	jr $ra # DO NOT TOUCH THIS LINE
+	jr $ra
 
 ######################################################################
 # DecryptMessage
@@ -332,8 +315,6 @@ Finish:
 
 
 DecryptMessage:	
-
-# TODO: Put your implemententation for DecryptMessage here.
 	# $a0: the memory address of the message
 	# $a1: the key (size of the offset chosen by the user) 
 	# $s0: number of char encrypted
@@ -355,4 +336,4 @@ DecryptMessage:
 	j Encryption		
 			
 #===================================================================#
-	jr $ra # DO NOT TOUCH THIS LINE
+	jr $ra
